@@ -17,19 +17,17 @@ body {
 }
 
 .icon{
-    text-decoration: none;
-    display: block;
+    margin: 2px;
+   
     padding-left: 70px;
-    color: #fff;
-    transition: .5s ease;
 }
-.icon a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 2rem;
-    font-weight: bold;
-    transition: .5s ease;
-} 
+
+.icon img{
+    top: 0;
+    width: 100px;
+    height: 70px;
+    
+}
 
 a{
     text-decoration: none;
@@ -76,7 +74,7 @@ a{
     transition: .4s;
 }
 
-ul li:hover a{
+.sidebar ul li:hover a{
     font-size: 30px;
 }
 a:hover {
@@ -199,19 +197,32 @@ label #cancel{
     font-size: 1.5rem;
 }
 
-.news {
-    border-radius: 30px;
-    background-color: oldlace;
-    width: 600px;
-    height: 300px;
-    border: 7px solid #03b6fc;
-    margin: 20px;
-    overflow-y:scroll;
+@font-face {
+    font-family: headline;
+    src: url("Chomsky.otf") format("opentype");
 }
 
-.news ul {
+.news {
+    border-radius: 30px;
+    background-color:#e6e7e1;
+    width: 600px;
+    height: 300px;
+    border: 7px solid #414045;
+    margin: 20px;
+    overflow-y:hidden;
+}
+.news h1{
+    font-family: headline;
+    color: #414045;
+    text-align: center;
+    font-size: 50px;
+}
+.news ul a{
     text-decoration: none;
-    font-size: 30px;
+    margin: 2px;
+    word-spacing:;
+    font-size: 25px;
+    color: #414045;
 }
 
 
