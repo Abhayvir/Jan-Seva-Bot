@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="home.css">
         <link rel="stylesheet" href="chatp.css">
         
@@ -12,8 +12,26 @@
     </head>
 
     <body>
-
-        <nav id="nav">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+    
+            <i class="fa fa-angle-left" id="cancel"></i>
+        </label>
+    
+        <h1 class="icon"><a href="index.html"><img src="icon.png" alt=""></a></h1>
+    
+        <div class="sidebar">
+            <header><a href="index.html"> Jan-Seva Bot</a></header>
+            <ul class="links">
+                <li><a href="p1.html">Pradhan Mantri Fasal bima yojana</a></li>
+                <li><a href="p2.html">Pradhan Mantri Kisan Sampada Yojana</a></li>
+                <li><a href="p3.html">Jan Dhan Yojna</a></li>
+                <li><a href="p4.html">Pradhan Mantri Suraksha Bima Yojana</a></li>
+                <li><a href="p5.html">PM Mudra Yojna</a></li>
+            </ul>
+        </div>
+        <!-- <nav id="nav">
         
             <label class="logo">
                 <a href="index.html">Jan-Seva Bot</a>
@@ -26,7 +44,7 @@
                 <li><a href="p4.html">p4</a></li>
                 <li><a href="p5.html">p5</a></li>
             </ul>
-        </nav>
+        </nav> -->
     <!-- CHAT BAR BLOCK -->
     <div class="chat-bar-collapsible">
         <button id="chat-button" type="button" class="collapsible">Jan-Seva Bot
@@ -53,8 +71,7 @@
                             </div>
 
                             <div class="chat-bar-icons">
-                                <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
-                                    onclick="heartButton()"></i>
+                               
                                 <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
                                     onclick="sendButton()"></i>
                             </div>
