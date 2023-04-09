@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Poppins:wght@200;300&display=swap");
+
+@import "home.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  --light-color: #fff;
+  height: 505px;
+  width: 600px;
+  background: var(--light-color);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.chat-header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 20px;
+  background-color: #003cb3;
+  color: var(--light-color);
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.chat-header .logo {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+  background-color: var(--light-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-header img {
+  height: 70%;
+  width: 70%;
+}
+
+.chat-header .title {
+  display: none;
+}
+
+.chat-body {
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  align-items: flex-start;
+  overflow-y: auto;
+}
+
+.chat-input {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #ccc;
+}
+
+.input-sec {
+  flex: 9;
+}
+
+.send {
+  flex: 1;
+  padding-right: 4px;
+  width: 25%;
+  float: right;
+  font-size: 20px;
+
+}
+
+#txtInput {
+  line-height: 30px;
+  margin-left: 2%;
+  padding: 10px 10px;
+  border: none;
+  outline: none;
+  caret-color: black;
+  font-size: 1rem;
+  width: 95%;
+  background-color: #cfdae4;
+  border-radius: 15px;
+}
+
+.chatbot-message,
+.user-message {
+  padding: 8px 12px;
+  background: #f2f2f2;
+  margin: 5px;
+  width: max-content;
+  border-radius: 20px;
+}
+
+.chatbot-message {
+  background: #003cb3;
+  color: var(--light-color);
+  align-self: flex-start;
+  max-width: 70%;
+  border-radius: 20px 20px 20px 5px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.user-message {
+  align-self: flex-end;
+  background: #e5e5ea;
+  color: #333;
+  border-radius: 20px 20px 5px 20px;
+}
+
+/* home css starts */
+
+#check:checked ~ .container {
+  z-index: -1;
+}
+
+
