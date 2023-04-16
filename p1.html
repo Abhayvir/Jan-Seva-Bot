@@ -7,11 +7,14 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="home.css">
         <link rel="stylesheet" href="chatp.css">
+        <link rel="stylesheet" href="form.css">
         
 
     </head>
 
-    <body>
+    <body >
+        
+<div id="blur">
     <input type="checkbox" id="check">
     <label for="check">
         <i class="fas fa-bars" id="btn"></i>
@@ -32,39 +35,32 @@
         </ul>
     </div>
 
-        <!-- <nav id="nav">
-        
-            <label class="logo">
-                <a href="index.html">Jan-Seva Bot</a>
-                </label>
-            
-            <ul class="links">
-                <li><a href="p1.html">p1</a></li>
-                <li><a href="p2.html">p2</a></li>
-                <li><a href="p3.html">p3</a></li>
-                <li><a href="p4.html">p4</a></li>
-                <li><a href="p5.html">p5</a></li>
-            </ul>
-        </nav> -->
-    <!-- CHAT BAR BLOCK -->
-    <div class="chat-bar-collapsible">
+    <div class="banner"><img src="4.jpg" alt=""></div>
+
+
+
+    <div class="textbox">
+    <h1>Welcome to My Webpage</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id lacinia libero. Sed sodales nisi non felis dapibus rutrum. Sed eleifend mauris mauris, vel consectetur turpis malesuada sit amet. Duis malesuada auctor nisi, sed pharetra dolor hendrerit eget. Etiam suscipit massa eget congue euismod.</p>
+    </div>
+    <!-- <div class="chat-bar-collapsible">
         <button id="chat-button" type="button" class="collapsible">Jan-Seva Bot
             <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
-        </button>
+        </button> -->
 
-        <div class="content">
-            <div class="full-chat-block">
+        <!-- <div class="content">
+            <div class="full-chat-block"> -->
                 <!-- Message Container -->
-                <div class="outer-container">
-                    <div class="chat-container">
+                <!-- <div class="outer-container">
+                    <div class="chat-container"> -->
                         <!-- Messages -->
-                        <div id="chatbox">
+                        <!-- <div id="chatbox">
                             <h5 id="chat-timestamp"></h5>
                             <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
-                        </div>
+                        </div> -->
 
                         <!-- User input box -->
-                        <div class="chat-bar-input-block">
+                        <!-- <div class="chat-bar-input-block">
                             <div id="userInput">
                                 <input id="textInput" class="input-box" type="text" name="msg"
                                     placeholder="Tap 'Enter' to send a message">
@@ -86,13 +82,59 @@
                 </div>
 
             </div>
-        </div>
+        </div> -->
 
+    </div>
+    <div class="form-btn" id="form-btn"><button onclick="openForm(); toggle()">Check for eligibility</button></div>
+
+      
+    <div class="form-popup" id="myForm">
+        <div class="container">
+        <div class="chat-body">
+                <div class="chat-header">
+                  <div class="logo">
+                    <img src="iconchat.png" alt="cwt" />
+                  </div>
+                 JAN SEVA BOT
+                </div>
+           <form action="" class="MyForm">
+            1) Do you own institutional land?
+              <br>
+              <input type="radio" name="Question1" value="Yes"> Yes 
+              <input type="radio" name="Question1" value="No"> No  
+              <br><br>
+            2) Individuals in your who hold or have held a constitutional post?
+              <br>
+              <input type="radio" name="Question2" value="Yes"> Yes 
+              <input type="radio" name="Question2" value="No"> No  
+              <br><br>
+            3) Have you filed income tax in the previous Assessment Year (AY)?
+              <br>
+              <input type="radio" name="Question3" value="Yes"> Yes 
+              <input type="radio" name="Question3" value="No"> No  
+              <br><br>
+            4) Have you retired from a job and receive a pension of more than 10000?
+              <br>
+              <input type="radio" name="Question4" value="Yes"> Yes 
+              <input type="radio" name="Question4" value="No"> No  
+              <br><br>
+            5) Is any member of your family holding a government post?
+              <br>
+              <input type="radio" name="Question5" value="Yes"> Yes 
+              <input type="radio" name="Question5" value="No"> No  
+              <br><br>
+            <button type="submit" class="btn">Check Eligibility</button>
+           </form>
+           <p class="message"></p>
+        </div>
+      </div>
     </div>
 
 </body>
+<!--  blur -->
+<!-- for blur ends -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="responses.js"></script>
+<script src="form.js"></script>
 <script src="chat.js"></script>
         
 </html>
