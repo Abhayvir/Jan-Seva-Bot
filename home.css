@@ -44,9 +44,11 @@ a{
     height: 100%;
     background-color: #ffffff;
     border: 1px solid black;
-    opacity: 0.8;
+    opacity: 1;
     transition: all .5s ease;
     text-transform: uppercase;
+    z-index: 10;
+    border-radius: 10px;
 }
 
 .sidebar a{
@@ -59,14 +61,19 @@ a{
     font-size: 42px;
     text-align: center;
     line-height: 90px;
-    background: #eb5e34;
+    background: #003cb3;
     font-weight: 500;
+    border-radius: 10px;
+}
 
+.sidebar header a{
+    color: #fff;
 }
 .sidebar ul{
-    margin-top: 30px;
+    margin-top: 10px;
     list-style-type: none;
     font-weight: 400;
+
 }
 
 .sidebar ul a{
@@ -76,14 +83,13 @@ a{
     text-align: center;
     height: 100%;
     width: 100%;
-    line-height: 90px;
+    line-height: 80px;
     transition: .4s;
 }
 
 .sidebar ul li:hover a{
     font-size: 30px;
 }
-
 a:hover {
     color: #003cb3;
 }
@@ -159,6 +165,7 @@ label #cancel{
 }
   
 .banner img{
+    z-index: -2;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -271,6 +278,7 @@ label #cancel{
 }
   
 .manual-btn{
+    z-index: 1;
     border: 2px solid #003cb3;
     padding: 5px;
     border-radius: 10px;
